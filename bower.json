@@ -1,0 +1,18 @@
+{
+  "name": "andyperlitch-front",
+  "version": "0.0.0",
+  "authors": [
+    "Andy Perlitch <andyperlitch@gmail.com>"
+  ],
+  "description": "Personal website",
+  "license": "MIT",
+  "homepage": "http://www.andyperlitch.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
