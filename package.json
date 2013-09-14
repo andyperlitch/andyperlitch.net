@@ -8,5 +8,8 @@
   },
   "repository": "",
   "author": "Andy Perlitch",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "express": "~3.4.0"
+  }
 }
