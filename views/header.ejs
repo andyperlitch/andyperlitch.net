@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>AndyPerlitch.net</title>
+        <meta name="viewport" content="width=device-width, user-scalable=false;">
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" charset="utf-8">
+        <% if (stylesheet) { %>
+        <link rel="stylesheet" href="/css/<%= stylesheet %>" type="text/css" media="screen" charset="utf-8">
+        <% } %>
+    </head>
+    <body id="<%= body_id %>">
+        
+        <div class="main-page-header" id="homepage-navbar">
+            <div class="container">
+                <div class="header-inner">
+                    <nav>
+                        <ul>
+                            <% pageArray.forEach(function(page) {%>
+                                <li><a href="<%= page.href %>" <% if (page.body_id === body_id) {%>class="selected"<% }%> ><%= page.text %></a></li>
+                            <% }) %>
+                        </ul>
+                    </nav>
+                    <h1 class="main-title">
+                        <span class="andy">ANDY</span>
+                        <span class="perlitch">PERLITCH</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        
+        <div id="main-content">
+            <div class="container">

@@ -1,0 +1,21 @@
+<% include header %>
+<h2>Portfolio</h2>
+<h3>Websites</h3>
+
+<% portfolioItems.forEach(function(item) { %>
+<div class="portfolio-item">
+    <h4><a href="<%= item.href %>"><%= item.title %></a></h4>
+    <p>
+        <strong>Summary:</strong> <%= item.summary %>
+        <% if (item.responsibilities) { %>
+        <br/><strong>Responsibilities:</strong> <%= item.responsibilities.join(', ') %>.
+        <% } %>
+        <% if (item.tech) { %>
+        <br/><strong>Technologies:</strong> <%= item.tech.join(', ') %>.
+        <% } %>
+    
+    </p>
+</div>
+<% }) %>
+
+<% include footer %>

@@ -1,0 +1,108 @@
+body {
+  background: #272418 url("/img/dark_bg.png") repeat;
+  color: #FFF;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+h1 {
+  font-family: "Arial Black", arial, sans-serif;
+  font-weight: bold;
+}
+a {
+  color: #e3dfb2;
+}
+a:hover {
+  color: #fefefd;
+}
+.main-page-header {
+  background: url("/img/header_bg.jpg") repeat-x top left;
+  border: none;
+  position: relative;
+}
+.main-page-header .container {
+  height: 100%;
+  position: relative;
+}
+.main-page-header .container .header-inner {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+.main-page-header .container .header-inner .main-title {
+  color: #fa4f06;
+  text-indent: -10000px;
+  overflow: hidden;
+  max-width: 618px;
+  display: inline-block;
+  margin: -5px 0;
+}
+.main-page-header .container .header-inner .main-title .andy,
+.main-page-header .container .header-inner .main-title .perlitch {
+  background-image: url("/img/title.png");
+  background-repeat: no-repeat;
+  display: block;
+  height: 39px;
+}
+.main-page-header .container .header-inner .main-title .andy {
+  background-position: 0 0;
+  width: 228px;
+  float: left;
+}
+.main-page-header .container .header-inner .main-title .perlitch {
+  background-position: -238px 0;
+  width: 381px;
+  float: right;
+}
+.main-page-header .container .header-inner nav ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.main-page-header .container .header-inner nav ul li {
+  width: 105px;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+.main-page-header .container .header-inner nav ul li a {
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-weight: bold;
+  display: block;
+  padding: 0;
+  color: black;
+  text-transform: uppercase;
+}
+.main-page-header .container .header-inner nav ul li a.selected {
+  color: #272418;
+}
+.main-page-header .container .header-inner nav ul li a.selected:hover {
+  text-decoration: none;
+  cursor: default;
+}
+#main-content {
+  position: relative;
+}
+#main-content > .container {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  max-width: 650px;
+}
+#main-content .me {
+  background: transparent url("/img/andy.png") top right no-repeat;
+  height: 476px;
+  width: 478px;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  -moz-transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+}
+@media (max-width: 1024px) {
+  #main-content .me {
+    opacity: 0.3;
+  }
+}

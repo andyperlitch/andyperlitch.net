@@ -1,0 +1,147 @@
+[
+    {
+        "href": "http://www.heatshieldstore.com",
+        "title": "Heatshield Store",
+        "summary": "E-commerce website for selling Heatshields: sun shades for car windshields.",
+        "responsibilities": [
+            "design", 
+            "front-end development", 
+            "back-end development",
+            "database design", 
+            "server setup", 
+            "system integration",
+            "custom cart solution",
+            "integration with payment gateway",
+            "PCI compliance",
+            "cross-browser compatibility",
+            "custom content management system"
+        ],
+        "tech": [
+            "PHP",
+            "MySQL",
+            "Apache Web Server",
+            "UNIX",
+            "HTML5",
+            "CSS3",
+            "Javascript",
+            "RequireJS",
+            "jQuery"
+        ]
+    },
+    {
+        "href": "http://www.aircraftcovers.com",
+        "title": "Aircraft Covers",
+        "summary": "E-commerce website for Aircraft Covers Inc., a.k.a. Bruce's Custom Covers.",
+        "responsibilities": [
+            "design",
+            "front-end development", 
+            "back-end development",
+            "database design", 
+            "server setup",
+            "internationalization",
+            "system integration",
+            "custom cart solution",
+            "integration with payment gateway", 
+            "PCI compliance",
+            "cross-browser compatibility",
+            "custom content management system"
+        ],
+        "tech": [
+            "PHP",
+            "MySQL",
+            "Apache Web Server",
+            "UNIX",
+            "HTML5",
+            "CSS3",
+            "Javascript",
+            "jQuery"
+        ]
+    },
+    {
+        "href": "https://www.aircraftcovers.com/corner_marker/",
+        "title": "Corner Marker",
+        "summary": "Experimental HTML5 application for specialized marking of corners on pattern files.",
+        "responsibilities": [
+            "sole developer"
+        ],
+        "tech": [
+            "Javascript",
+            "HTML5 Canvas API",
+            "CSS3",
+            "jQuery UI"
+        ]
+    },
+    {
+        "href": "http://beta.bcpmusic.org/",
+        "title": "BCP Music (beta)",
+        "summary": "Website for BCP Music, a publishing company for composers. Note: only developed beta site.",
+        "responsibilities": [
+            "design",
+            "front-end development", 
+            "back-end development",
+            "database design", 
+            "server setup",
+            "cross-browser compatibility",
+            "custom content management system"
+        ],
+        "tech": [
+            "PHP",
+            "MySQL",
+            "Apache Web Server",
+            "UNIX",
+            "HTML5",
+            "CSS3",
+            "Javascript",
+            "RequireJS",
+            "jQuery"
+        ]
+    },
+    {
+        "href": "http://www.noahluna.com/",
+        "title": "NoahLuna.com",
+        "summary": "Personal website for Noah Luna, founder of BCP Music.",
+        "responsibilities": [
+            "design",
+            "front-end development", 
+            "back-end development",
+            "database design", 
+            "server setup",
+            "cross-browser compatibility",
+            "custom content management system"
+        ],
+        "tech": [
+            "PHP",
+            "MySQL",
+            "Apache Web Server",
+            "UNIX",
+            "HTML5",
+            "CSS3",
+            "Javascript",
+            "jQuery"
+        ]
+    },
+    {
+        "href": "http://www.alexsadnik.com/",
+        "title": "AlexSadnik.com",
+        "summary": "Personal website for musician Alex Sadnik.",
+        "responsibilities": [
+            "design",
+            "front-end development", 
+            "back-end development",
+            "database design", 
+            "server setup",
+            "cross-browser compatibility",
+            "custom content management system"
+        ],
+        "tech": [
+            "PHP",
+            "MySQL",
+            "Apache Web Server",
+            "UNIX",
+            "HTML5",
+            "CSS3",
+            "Javascript",
+            "jQuery"
+        ]
+    }
+]
