@@ -1,10 +1,9 @@
 <% include header %>
-<h2>Portfolio</h2>
-<h3>Websites</h3>
+<h2>Websites</h2>
 
 <% portfolioItems.forEach(function(item) { %>
 <div class="portfolio-item">
-    <h4><a href="<%= item.href %>"><%= item.title %></a></h4>
+    <h3><a href="<%= item.href %>"><%= item.title %></a></h3>
     <p>
         <strong>Summary:</strong> <%= item.summary %>
         <% if (item.responsibilities) { %>

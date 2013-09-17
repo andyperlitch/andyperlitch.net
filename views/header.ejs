@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>AndyPerlitch.net</title>
-        <meta name="viewport" content="width=device-width, user-scalable=false;">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" charset="utf-8">
         <% if (stylesheet) { %>
@@ -18,7 +18,7 @@
                     <nav>
                         <ul>
                             <% pageArray.forEach(function(page) {%>
-                                <li><a href="<%= page.href %>" <% if (page.body_id === body_id) {%>class="selected"<% }%> ><%= page.text %></a></li>
+                                <li><a id="<%= page.body_id %>-link" href="<%= page.href %>" <% if (page.body_id === body_id) {%>class="selected"<% }%> ><%= page.text %></a></li>
                             <% }) %>
                         </ul>
                     </nav>

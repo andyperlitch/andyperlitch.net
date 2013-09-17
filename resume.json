@@ -1,0 +1,154 @@
+{
+    "experiences": [
+        {
+            "name": "DataTorrent Inc",
+            "position": "Software Engineer",
+            "timeframe": "January 2013 - Current",
+            "list": [
+                {
+                    "title": "Lead the design and development of UI console for the DataTorrent platform:",
+                    "list": [
+                        "mock-ups/wireframe creation",
+                        "created build process to be run for continuous integration",
+                        "set up unit testing suite for front-end javacsript"
+                    ]
+                },
+                "Collaborate with back-end engineers on API specs and design decisions",
+                "Constant use of JIRA for issue tracking",
+                "Strict version control with git",
+                "Goal-oriented monthly code-sprints"
+            ]
+        },
+        {
+            "name": "Aircraft Covers Inc & Heatshields",
+            "position": "Web Developer / IT Support",
+            "timeframe": "Aug 2010 - Dec 2012",
+            "list": [
+                {
+                    "title": "AircraftCovers.com",
+                    "list": [
+                        "It was deployed in April 2012, and total number of internet orders for 2012 is over 25% more than in 2011.",
+                        "Uses HTML5, CSS3, media queries, and jQuery for cross-browser, responsive web design",
+                        "Complete development of custom content management system where admins can manage news, gallery, orders placed online, catalog, coupons, i18n, closure dates, and more",
+                        "a \"dynamic text\" management system, where admins can change any piece of text that is displayed on the site. This system is also used to translate the site for internationalization",
+                        "a completely custom-built live chat system using jQuery plugin-like modules for re-use"
+                    ]
+                },
+                {
+                    "title": "Heatshieldstore.com",
+                    "list": [
+                        "Deployed in February 2013",
+                        "Internationalization support",
+                        "Project requirements similar to that of AircraftCovers.com"
+                    ]
+                },
+                {
+                    "title": "Development of Corner Marker",
+                    "list": [
+                        "a CAD tool that can alter XML-based pattern files",
+                        "Makes full use of the HTML5 Canvas 2D API to render project window",
+                        "Built with object-oriented javascript using prototypal inheritance",
+                        "Customizable keyboard shortcuts",
+                        "\"Open\" and \"Save\" functionality to act like a desktop app",
+                        "Works in Windows and Mac versions of Chrome and other modern browsers",
+                        "Uses jQuery UI for menus, dialogs, etc."
+                    ]
+                },
+                "Responded to the various needs of Sales team and technical staff to add to and improve site"
+            ]
+        },
+        
+        {
+            "name": "Euphoric Styles LLC",
+            "position": "Partner / Lead Full-Stack Developer",
+            "timeframe": "Feb 2010 - July 2012",
+            "list": [
+                "Designed and developed euphoricstyles.com, a single-page web app where users can browse through music, art, and clothing to purchase, all while listening to uninterrupted music.",
+                "Integration with Authorize.net's payment gateway API (using custom-built PHP code)",
+                "The site is completely ajax-driven with no page refreshes so that music can play continuously while users browse",
+                "Creating a login system with dashboards for admin, artists, and users of the site",
+                "Integration with Great Apparel for You (GAFY), a fulfillment company that automates the production and shipment of apparel with custom, digitally-printed artwork: as orders come in, the site generates a CSV file specifying which design to print on what shirt and where it should be shipped. The file is then sent to GAFY where the clothing is printed and sent off to our customers."
+            ]
+        },
+        
+        {
+            "name": "Newfront Creative",
+            "position": "Web Developer Intern",
+            "timeframe": "Jan 2008 - Dec 2009",
+            "list": [
+                "Created various UX and UI elements of client sites using javascript, CSS, and XHTML",
+                "Learned and implemented basic back-end systems using PHP and MySQL",
+                "Produced mock-ups and wireframes for client sites in Photoshop"
+            ]
+        }
+    ],
+
+    "skills": [
+        {
+            "name": "Front-End",
+            "topics": [
+                "HTML5 (markup & APIs)",
+                "Javascript/ECMAScript",
+                "CSS3",
+                "AJAX"
+            ],
+            "libraries": [
+                "Twitter Bootstrap",
+                "jQuery",
+                "jQueryUI",
+                "browserify",
+                "requireJS"
+            ]
+        },
+        {
+            "name": "Back-End",
+            "topics": [
+                "PHP",
+                "Node.js",
+                "Java"
+            ],
+            "libraries": [
+                "Express.js",
+                "Zend Framework"
+            ]
+        },
+        {
+            "name": "Database",
+            "topics": [
+                "MySQL",
+                "mongoDB"
+            ]
+        },
+        {
+            "name": "Operating Systems",
+            "topics": [
+                "Mac OS",
+                "UNIX/Linux (command line)",
+                "Windows"
+            ]
+        },
+        {
+            "name": "Version Control",
+            "topics": [
+                "git"
+            ]
+        },
+        {
+            "name": "Text Editors",
+            "topics": [
+                "Textmate",
+                "Sublime Text 2",
+                "vim"
+            ]
+        },
+        {
+            "name": "Graphics/CAD",
+            "topics": [
+                "Photoshop (2D, bitmap)",
+                "Illustrator (2D, vector)",
+                "FormZ (3D)"
+            ]
+        }
+    ]
+    
+}

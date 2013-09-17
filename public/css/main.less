@@ -3,7 +3,7 @@ body {
     background: @main_brown url("/img/dark_bg.png") repeat;
     color: #FFF;
     font-weight:100;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
 }
 h1 {
     font-family: @title_family;
@@ -22,6 +22,7 @@ a {
     background: url("/img/header_bg.jpg") repeat-x top left;
     border:none;
     position:relative;
+    width: 100%;
     
     .container {
         height: 100%;
@@ -56,6 +57,7 @@ a {
                 .perlitch {
                     background-position: -238px 0;
                     width: 381px;
+                    max-width: 100%;
                     float:right;
                 }
             }
@@ -77,9 +79,13 @@ a {
                         padding:0;
                         color:black;
                         text-transform: uppercase;
-                        
+                        &.selected#home-link {
+                            color: @main_brown;
+                            background-color:transparent;
+                        }
                         &.selected {
-                            color: @main_brown  ;
+                            color: @main_tan;
+                            background-color:@main_brown;
                             &:hover {
                                 text-decoration: none;
                                 cursor: default;
@@ -98,8 +104,11 @@ a {
     > .container {
         z-index: 1;
         position:relative;
-        text-align: center;
         max-width: 650px;
+        
+        h2 {
+            border-bottom: 1px solid white;
+        }
     }
     .me{
         background: transparent url("/img/andy.png") top right no-repeat;

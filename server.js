@@ -5,10 +5,10 @@ var express          = require('express'),
     app = express(),
     pageArray = [
         { href: "/", text: "home", body_id: "home" },
-        { href: "https://soundcloud.com/andyperlitch", text: "music", body_id: "music" },
-        { href: "https://github.com/andyperlitch", text: "software", body_id: "software" },
         { href: "/portfolio", text: "portfolio", body_id: "portfolio" },
         { href: "/resume", text: "resume", body_id: "resume" },
+        { href: "https://soundcloud.com/andyperlitch", text: "music", body_id: "music" },
+        { href: "https://github.com/andyperlitch", text: "software", body_id: "software" },
         { href: "/contact", text: "contact", body_id: "contact" }
     ];
     
@@ -45,16 +45,27 @@ app.get('/portfolio', function(req, res) {
 });
 
 app.get('/resume', function(req, res) {
-    res.render('resume', {
-        pageArray: pageArray,
-        body_id: 'resume'
-    });
+
+    var resume;
+    
+    try {
+        resume = JSON.parse(fs.readFileSync('./resume.json', {encoding: 'utf8'}));
+        resume.pageArray = pageArray;
+        resume.body_id = 'resume';
+        resume.stylesheet = 'resume.css';
+    } catch (e) {
+        console.log('trace: ', e);
+        resume = {};
+    }
+    
+    res.render('resume', resume);
 });
 
 app.get('/contact', function(req, res) {
     res.render('contact', {
         pageArray: pageArray,
-        body_id: 'contact'
+        body_id: 'contact',
+        stylesheet: 'contact.css'
     });
 });
 

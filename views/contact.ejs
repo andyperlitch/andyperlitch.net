@@ -1,0 +1,31 @@
+<% include header %>
+
+<h2>Contact</h2>
+
+<p>
+    <strong>email: </strong>
+    <script language=javascript>
+    (function(){
+        var user = "andyperlitch"
+        var domain = "gmai" + "l.com"
+        var address = user + "@" + domain
+        var linkStart = "<a href=" + "mail" + "to:" + address + ">"
+        var linkEnd = "</a>"
+        var linkAddress = linkStart + address + linkEnd
+        document.write(linkAddress)
+    }());
+    </script>
+    <br>
+    <!-- <strong> </strong> <a href="http://www.linkedin.com/pub/andy-perlitch/42/924/a3b">linkedin profile</a> <br>
+        <strong>github: </strong> <a href="http://www.github.com/andyperlitch">andyperlitch</a> -->
+</p>        
+<div class="follow-links">
+    <ul>
+        <li><a href="http://www.linkedin.com/pub/andy-perlitch/42/924/a3b" class="linkedin" title="linkedin profile">linkedin profile</a></li>
+        <li><a href="http://www.github.com/andyperlitch" class="github" title="github profile">github profile</a></li>
+        <li><a href="https://soundcloud.com/andyperlitch" class="soundcloud" title="soundcloud page">soundcloud page</a></li>
+        
+    </ul>
+</div>
+
+<% include footer %>

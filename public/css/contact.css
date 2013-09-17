@@ -1,0 +1,29 @@
+.follow-links ul {
+  list-style: none;
+  padding: 0;
+}
+.follow-links ul li {
+  display: inline-block;
+}
+.follow-links ul li a {
+  display: block;
+  background-image: url("/img/follow_links.png");
+  text-indent: -10000px;
+  overflow: hidden;
+  height: 60px;
+  width: 60px;
+  border-radius: 3px;
+  opacity: 0.7;
+}
+.follow-links ul li a:hover {
+  opacity: 1;
+}
+.follow-links ul li a.linkedin {
+  background-position: 0 0;
+}
+.follow-links ul li a.github {
+  background-position: -60px 0;
+}
+.follow-links ul li a.soundcloud {
+  background-position: -120px 0;
+}
