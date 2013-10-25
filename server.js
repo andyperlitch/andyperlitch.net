@@ -1,7 +1,7 @@
 var express          = require('express'),
     ejs              = require('ejs'),
     fs               = require('fs'),
-
+    argv             = require('optimist').argv,
     app = express(),
     pageArray = [
         { href: "/", text: "home", body_id: "home" },
@@ -71,6 +71,6 @@ app.get('/contact', function(req, res) {
 
 app.use(express.static(__dirname + '/public'));
 
-app.listen(1337);
+app.listen(argv.p);
 
-console.log('server listening on: 1337');
+console.log('server listening on: ' + argv.p);
