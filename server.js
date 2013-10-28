@@ -2,9 +2,8 @@ var express          = require('express'),
     ejs              = require('ejs'),
     fs               = require('fs'),
     argv             = require('optimist')
-                        .default('p', 1337)
                         .argv,
-    port             = process.env.APNET_PORT * 1 || argv.p * 1,
+    port             = argv.p * 1,
     app = express(),
     pageArray = [
         { href: "/", text: "home", body_id: "home" },
