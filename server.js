@@ -73,4 +73,4 @@ app.use(express.static(__dirname + '/public'));
 
 app.listen(argv.p);
 
-console.log('server listening on: ' + argv.p);
+console.log('server listening on: ' + (process.env.APNET_PORT || argv.p));
