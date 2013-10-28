@@ -1,7 +1,10 @@
 var express          = require('express'),
     ejs              = require('ejs'),
     fs               = require('fs'),
-    argv             = require('optimist').argv,
+    argv             = require('optimist')
+                        .default('p', 1337)
+                        .argv,
+    port             = process.env.APNET_PORT * 1 || argv.p * 1,
     app = express(),
     pageArray = [
         { href: "/", text: "home", body_id: "home" },
@@ -71,6 +74,6 @@ app.get('/contact', function(req, res) {
 
 app.use(express.static(__dirname + '/public'));
 
-app.listen(argv.p);
+app.listen(port);
 
-console.log('server listening on: ' + (process.env.APNET_PORT || argv.p));
+console.log('server listening on: ' + port);
