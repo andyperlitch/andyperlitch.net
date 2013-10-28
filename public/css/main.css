@@ -31,30 +31,13 @@ a:hover {
 }
 .main-page-header .container .header-inner .main-title {
   color: #fa4f06;
-  text-indent: -10000px;
   overflow: hidden;
   max-width: 618px;
   display: inline-block;
   margin: -5px 0;
 }
-.main-page-header .container .header-inner .main-title .andy,
-.main-page-header .container .header-inner .main-title .perlitch {
-  background-image: url("/img/title.png");
-  background-repeat: no-repeat;
-  display: block;
-  height: 39px;
-}
-.main-page-header .container .header-inner .main-title .andy {
-  background-position: 0 0;
-  width: 228px;
-  float: left;
-}
-.main-page-header .container .header-inner .main-title .perlitch {
-  background-position: -238px 0;
-  background-size: auto 100%;
-  width: 381px;
-  max-width: 100%;
-  float: right;
+.main-page-header .container .header-inner .main-title .hidden-title-text {
+  display: none;
 }
 .main-page-header .container .header-inner nav ul {
   display: block;
