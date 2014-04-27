@@ -74,6 +74,11 @@ app.get('/contact', function(req, res) {
 });
 
 app.get('/ludei_zip/:repo/:branch', function(req, res) {
+
+    // repo, branch
+    var repo = req.params.repo;
+    var branch = req.params.branch;
+
     // The archive stream
     var archive = archiver('zip');
 
@@ -81,7 +86,7 @@ app.get('/ludei_zip/:repo/:branch', function(req, res) {
     var rootDirName;
 
     // Get input, pipe to unzip utility
-    var input = request('https://github.com/andyperlitch/' + req.params.repo + '/archive/' + req.params.branch + '.zip').pipe(unzip.Parse());
+    var input = request('https://github.com/andyperlitch/' + repo + '/archive/' + branch).pipe(unzip.Parse());
 
     // Pass all but our parent directory to
     // archiver.
