@@ -1,8 +1,6 @@
 var fs = require('fs');
-var unzip = require('unzip');
-var request = require('request');
-var archiver = require('archiver');
 var express = require('express');
+var github2cocoon = require('github2cocoon');
 var ejs = require('ejs');
 var argv = require('optimist').argv;
     port             = argv.p * 1,
@@ -73,42 +71,7 @@ app.get('/contact', function(req, res) {
     });
 });
 
-app.get('/ludei_zip/:repo/:branch', function(req, res) {
-
-    // repo, branch
-    var repo = req.params.repo;
-    var branch = req.params.branch;
-
-    // The archive stream
-    var archive = archiver('zip');
-
-    // Will hold name of parent directory
-    var rootDirName;
-
-    // Get input, pipe to unzip utility
-    var input = request('https://github.com/andyperlitch/' + repo + '/archive/' + branch).pipe(unzip.Parse());
-
-    // Pass all but our parent directory to
-    // archiver.
-    input.on('entry', function(entry) {
-        var filepath = entry.path;
-        if (!rootDirName) {
-            rootDirName = filepath;
-            entry.autodrain();    
-        } else {
-            // Strip name of parent dir
-            archive.append(entry, { name: entry.path.replace(rootDirName, '') });
-        }
-    });
-
-    // Finalize the archive when input has closed.
-    input.on('close', function() {
-        archive.finalize();
-    });
-
-    // Emit to response
-    archive.pipe(res);
-});
+app.use(github2cocoon('ludei_zips', { username: 'andyperlitch' }));
 
 app.use(express.static(__dirname + '/public'));
 
