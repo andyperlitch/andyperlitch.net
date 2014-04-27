@@ -10,10 +10,13 @@
   "author": "Andy Perlitch",
   "license": "BSD",
   "dependencies": {
-    "express": "~3.4.0",
+    "archiver": "^0.9.0",
     "backbone": "~1.0.0",
-    "express3-handlebars": "~0.5.0",
     "ejs": "~0.8.4",
-    "optimist": "~0.6.0"
+    "express": "~3.4.0",
+    "express3-handlebars": "~0.5.0",
+    "optimist": "~0.6.0",
+    "request": "^2.34.0",
+    "unzip": "^0.1.9"
   }
 }
