@@ -71,7 +71,10 @@ app.get('/contact', function(req, res) {
     });
 });
 
-app.use(github2cocoon('ludei_zips', { username: 'andyperlitch' }));
+app.use(github2cocoon('ludei_zips', {
+    username: 'andyperlitch',
+    tmp_dir: __dirname + '/tmp_zips'
+}));
 
 app.use(express.static(__dirname + '/public'));
 
