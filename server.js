@@ -1,6 +1,5 @@
 var fs = require('fs');
 var express = require('express');
-var github2cocoon = require('github2cocoon');
 var ejs = require('ejs');
 var argv = require('optimist').argv;
     port             = argv.p * 1,
@@ -70,12 +69,6 @@ app.get('/contact', function(req, res) {
         stylesheet: 'contact.css'
     });
 });
-
-app.use(github2cocoon('ludei_zips', {
-    username: 'andyperlitch',
-    tmp_dir: __dirname + '/tmp_zips',
-    debug: true
-}));
 
 app.use(express.static(__dirname + '/public'));
 
