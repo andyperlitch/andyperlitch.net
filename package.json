@@ -16,6 +16,7 @@
     "express3-handlebars": "~0.5.0",
     "findit": "~1.2.0",
     "github2cocoon": "^0.1.2",
+    "markdown-pdf": "^4.0.0",
     "marked": "^0.3.2",
     "optimist": "~0.6.0"
   }
