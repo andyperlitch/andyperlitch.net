@@ -1,5 +1,6 @@
 var fs = require('fs');
 var marked = require('marked');
+var markdownpdf = require("markdown-pdf");
 var express = require('express');
 var ejs = require('ejs');
 var argv = require('optimist').argv;
@@ -57,6 +58,12 @@ app.get('/resume', function(req, res) {
         });
     })
         
+});
+
+app.get('/andyperlitch-resume.pdf', function(req, res) {
+    fs.createReadStream(__dirname + '/resume.md')
+      .pipe(markdownpdf())
+      .pipe(res);
 });
 
 app.get('/contact', function(req, res) {
