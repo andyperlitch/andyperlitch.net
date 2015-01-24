@@ -1,4 +1,5 @@
 var fs = require('fs');
+var marked = require('marked');
 var express = require('express');
 var ejs = require('ejs');
 var argv = require('optimist').argv;
@@ -46,20 +47,16 @@ app.get('/portfolio', function(req, res) {
 });
 
 app.get('/resume', function(req, res) {
-
-    var resume;
-    
-    try {
-        resume = JSON.parse(fs.readFileSync('./resume.json', {encoding: 'utf8'}));
-        resume.pageArray = pageArray;
-        resume.body_id = 'resume';
-        resume.stylesheet = 'resume.css';
-    } catch (e) {
-        console.log('trace: ', e);
-        resume = {};
-    }
-    
-    res.render('resume', resume);
+    fs.readFile(__dirname + '/resume.md', { encoding: 'utf8' }, function(err, md) {
+        var markup = marked(md);
+        res.render('resume', {
+            markup: markup,
+            pageArray: pageArray,
+            body_id: 'resume',
+            stylesheet: 'resume.css'
+        });
+    })
+        
 });
 
 app.get('/contact', function(req, res) {
