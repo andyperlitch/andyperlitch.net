@@ -1,6 +1,10 @@
 Andy Perlitch
 =============
 
+**phone**: (408) 829-9319
+
+**email**: andyperlitch@gmail.com
+
 Summary
 -------
 - 6+ years experience as a lead web application architect and expert UI designer/developer
