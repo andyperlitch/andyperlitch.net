@@ -4,7 +4,7 @@ var markdownpdf = require("markdown-pdf");
 var express = require('express');
 var ejs = require('ejs');
 var argv = require('optimist').argv;
-    port             = argv.p * 1,
+    port             = argv.p * 1 || 10000,
     app = express(),
     pageArray = [
         { href: "/", text: "home", body_id: "home" },
