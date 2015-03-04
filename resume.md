@@ -10,7 +10,7 @@ Summary
 
 Toolkit
 -------
-- **Front-End:** HTML5, JavaScript, CSS/LESS, *angular.js*, backbone.js, *Twitter Bootstrap*, jQuery, jQuery UI, d3.js, requireJS, browserify, 
+- **Front-End:** HTML5, JavaScript, CSS/LESS, *angular.js*, backbone.js, *Twitter Bootstrap*, jQuery, jQuery UI, *d3.js*, requireJS, browserify, 
 - **Graphics:** Photoshop, Illustrator, FormZ
 - **Back-End:** PHP, nodejs, expressjs
 - **Version Control:** Git
