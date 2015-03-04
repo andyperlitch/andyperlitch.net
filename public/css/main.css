@@ -1,18 +1,16 @@
 body {
   background: #272418 url("/img/dark_bg.png") repeat;
-  color: #FFF;
-  font-weight: 100;
-  letter-spacing: 0.1em;
 }
 h1 {
   font-family: "Arial Black", arial, sans-serif;
   font-weight: bold;
 }
 a {
-  color: #e3dfb2;
+  color: #665e3f;
 }
 a:hover {
-  color: #fefefd;
+  color: #a29769;
+  text-decoration: none;
 }
 .main-page-header {
   background: url("/img/header_bg.jpg") repeat-x top left;
@@ -76,9 +74,14 @@ a:hover {
 #main-content > .container {
   z-index: 1;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+  box-shadow: 0 1px 3px black;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #main-content > .container h2 {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #272418;
 }
 #main-content .me {
   background: transparent url("/img/andy.png") top right no-repeat;

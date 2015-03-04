@@ -1,9 +1,7 @@
 @import "variables";
 body {
     background: @main_brown url("/img/dark_bg.png") repeat;
-    color: #FFF;
-    font-weight:100;
-    letter-spacing: 0.1em;
+    
 }
 h1 {
     font-family: @title_family;
@@ -11,10 +9,11 @@ h1 {
 }
 
 a {
-    color: @main_tan;
+    color: lighten(@main_brown, 20%);
     
     &:hover {
-        color: lighten(@main_tan, 20%);
+        color: lighten(@main_brown, 40%);
+        text-decoration: none;
     }
 }
 
@@ -87,9 +86,13 @@ a {
     > .container {
         z-index: 1;
         position:relative;
-        
+        background-color: rgba(255,255,255,0.9);
+        border-radius: 3px;
+        box-shadow: 0 1px 3px black;
+        margin-top: 10px;
+        margin-bottom: 10px;
         h2 {
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid @main_brown;
         }
     }
     .me{
