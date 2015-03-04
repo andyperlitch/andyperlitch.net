@@ -11,6 +11,7 @@
   position: relative;
 }
 #main-content #i-am-a {
+  max-width: 600px;
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: 100;
   color: #FFF;
@@ -21,20 +22,43 @@
   margin: 0 auto;
 }
 #main-content #i-am-a .lvl-1 {
-  font-size: 40px;
+  font-size: 34.2px;
 }
 #main-content #i-am-a .lvl-2 {
-  font-size: 34px;
+  font-size: 28.8px;
 }
 #main-content #i-am-a .lvl-3 {
-  font-size: 26px;
+  font-size: 23.4px;
 }
 #main-content #i-am-a .lvl-4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 #main-content #i-am-a .lvl-5 {
-  font-size: 14px;
+  font-size: 12.6px;
 }
 #main-content #i-am-a .lvl-6 {
-  font-size: 10px;
+  font-size: 9px;
+}
+@media all and (max-width: 480px) {
+  #home #homepage-navbar {
+    height: 150px;
+  }
+  #home #main-content #i-am-a .lvl-1 {
+    font-size: 22.5px;
+  }
+  #home #main-content #i-am-a .lvl-2 {
+    font-size: 19.8px;
+  }
+  #home #main-content #i-am-a .lvl-3 {
+    font-size: 17.1px;
+  }
+  #home #main-content #i-am-a .lvl-4 {
+    font-size: 14.4px;
+  }
+  #home #main-content #i-am-a .lvl-5 {
+    font-size: 11.7px;
+  }
+  #home #main-content #i-am-a .lvl-6 {
+    font-size: 9px;
+  }
 }

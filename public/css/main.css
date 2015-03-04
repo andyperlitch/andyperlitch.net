@@ -76,7 +76,6 @@ a:hover {
 #main-content > .container {
   z-index: 1;
   position: relative;
-  max-width: 650px;
 }
 #main-content > .container h2 {
   border-bottom: 1px solid white;
