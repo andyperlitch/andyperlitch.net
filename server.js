@@ -15,6 +15,17 @@ var argv = require('optimist').argv;
         { href: "/contact", text: "contact", body_id: "contact" }
     ];
     
+function renderMarkdownFile(fileName, res, customPageTemplate) {
+    fs.readFile(__dirname + '/' + fileName + '.md', { encoding: 'utf8' }, function(err, md) {
+        var markup = marked(md);
+        res.render(customPageTemplate || 'default', {
+            markup: markup,
+            pageArray: pageArray,
+            body_id: fileName,
+            stylesheet: fileName + '.css'
+        });
+    });
+}
 
 app.engine('html', ejs.renderFile);
 
@@ -29,35 +40,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/portfolio', function(req, res) {
-    
-    var portfolioItems;
-    
-    try {
-        portfolioItems = JSON.parse(fs.readFileSync('./portfolio.json', {encoding: 'utf8'}));
-    } catch (e) {
-        console.log("an error occurred with portfolio items");
-        portfolioItems = [];
-    }
-    
-    res.render('portfolio', {
-        pageArray: pageArray,
-        body_id: 'portfolio',
-        stylesheet: 'portfolio.css',
-        portfolioItems: portfolioItems
-    });
+    renderMarkdownFile('portfolio', res);
 });
 
 app.get('/resume', function(req, res) {
-    fs.readFile(__dirname + '/resume.md', { encoding: 'utf8' }, function(err, md) {
-        var markup = marked(md);
-        res.render('resume', {
-            markup: markup,
-            pageArray: pageArray,
-            body_id: 'resume',
-            stylesheet: 'resume.css'
-        });
-    })
-        
+    renderMarkdownFile('resume', res, 'resume');
 });
 
 app.get('/andyperlitch-resume.pdf', function(req, res) {

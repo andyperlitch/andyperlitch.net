@@ -74,7 +74,7 @@ a:hover {
 #main-content > .container {
   z-index: 1;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #f7f6ea;
   border-radius: 3px;
   box-shadow: 0 1px 3px black;
   margin-top: 10px;

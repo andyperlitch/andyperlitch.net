@@ -5,3 +5,11 @@
 .portfolio-item h4 {
   margin-bottom: 3px;
 }
+#portfolio #main-content img {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#portfolio #main-content hr {
+  border-top: 1px solid #272418;
+}
