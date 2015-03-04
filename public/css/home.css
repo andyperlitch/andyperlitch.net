@@ -29,7 +29,7 @@
   line-height: 35px;
   padding-top: 30px;
   text-shadow: 1px 1px 1px #272418, 2px 2px 1px #272418, 3px 3px 1px #272418, -1px -2px 1px #272418;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 #main-content #i-am-a .lvl-1 {
   font-size: 34.2px;
@@ -71,4 +71,25 @@
   #home #main-content #i-am-a .lvl-6 {
     font-size: 9px;
   }
+}
+#gravigirl {
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#gravigirl img {
+  border: 2px solid white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  margin-right: 10px;
+  border-radius: 3px;
+}
+#gravigirl h3 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+#gravigirl a {
+  color: #e3dfb2;
 }
