@@ -3,7 +3,7 @@ Andy Perlitch
 
 Summary
 -------
-- 6+ years experience as a lead web application architect and expert UI designer/developer
+- 8+ years experience as a lead web application architect and expert UI designer/developer
 - Full-Stack development experience with LAMP and MEAN architectures
 - Strong ability to lead and manage UI teams
 - Very experienced in setting up e-commerce solutions; integrating with payment gateways, ensuring PCI Compliance, implementing shopping carts, etc.
@@ -101,6 +101,13 @@ HTML, CSS, PHP, MySQL, JavaScript, require.js, jQuery, UNIX/Linux, Git
 Education
 ---------
 
-**Bachelor of Science, Business Management Economics**  
+### Bachelor of Science, Business Management Economics
 University of California at Santa Cruz  
 Santa Cruz, CA 95066
+
+### Computer Science Courses
+- Computer Networking, UC Santa Cruz
+- Introduction to Java (Accelerated), UC Santa Cruz
+- Computer Architecture, Foothill Community College
+- Intermediate Java, Foothill Community College
+- Advanced Algorithms and Data Structures in Java, Foothill Community College

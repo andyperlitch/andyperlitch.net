@@ -1,15 +1,11 @@
 @import "variables";
 body {
     background: @main_brown url("/img/dark_bg.png") repeat;
-    
-}
-h1 {
-    font-family: @title_family;
-    font-weight:bold;
+    color: lighten(@main_tan, 10%);
 }
 
 a {
-    color: lighten(@main_brown, 20%);
+    color: @main_tan;
     
     &:hover {
         color: lighten(@main_brown, 40%);
@@ -37,7 +33,7 @@ a {
                 overflow: hidden;
                 max-width: 618px;
                 display:inline-block;
-                margin:-5px 0;
+                margin:-5px 0 -6px;
                 
                 .hidden-title-text {
                     display:none;
@@ -86,9 +82,6 @@ a {
     > .container {
         z-index: 1;
         position:relative;
-        background-color: lighten(@main_tan, 15%);
-        border-radius: 3px;
-        box-shadow: 0 1px 3px black;
         margin-top: 10px;
         margin-bottom: 10px;
         h2 {
