@@ -9,6 +9,14 @@ a:hover {
   color: #a29769;
   text-decoration: none;
 }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: white;
+}
 .main-page-header {
   background: url("/img/header_bg.jpg") repeat-x top left;
   border: none;
@@ -46,7 +54,7 @@ a:hover {
   text-align: center;
 }
 .main-page-header .container .header-inner nav ul li a {
-  font-family: "Helvetica Neue", arial, sans-serif;
+  font-family: 'Questrial', 'Helvetica Neue', arial, sans-serif;
   font-weight: bold;
   display: block;
   padding: 0;
@@ -66,6 +74,7 @@ a:hover {
   cursor: default;
 }
 #main-content {
+  -webkit-font-smoothing: antialiased;
   position: relative;
 }
 #main-content > .container {

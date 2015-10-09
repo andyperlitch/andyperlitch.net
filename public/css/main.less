@@ -13,6 +13,12 @@ a {
     }
 }
 
+body {
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+}
+
 .main-page-header {
     background: url("/img/header_bg.jpg") repeat-x top left;
     border:none;
@@ -51,7 +57,7 @@ a {
                     text-align:center;
             
                     a {
-                        font-family: "Helvetica Neue", arial, sans-serif;
+                        font-family: 'Questrial', 'Helvetica Neue', arial, sans-serif;
                         font-weight: bold;
                         display: block;
                         padding:0;
@@ -78,6 +84,7 @@ a {
 }
 
 #main-content {
+    -webkit-font-smoothing: antialiased;
     position:relative;
     > .container {
         z-index: 1;

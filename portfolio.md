@@ -6,7 +6,19 @@ Portfolio
 ### DataTorrent Management Console ([view demo](https://www.youtube.com/watch?v=WW0BwBKdPDk))
 <div class="clearfix"></div>
 #### Description
-The DataTorrent Management Console is the web-based dashboard that comes packaged with the [DataTorrent Platform](https://www.datatorrent.com). It is used by the developers and sysadmins of DataTorrent customers. Notable features include: a drag-and-drop application builder, metric and data graphing/charting, alerting capabilities, and more.
+The DataTorrent Management Console is the web-based dashboard that comes packaged with the [DataTorrent Platform](https://www.datatorrent.com). It is used by the developers and sysadmins of DataTorrent customers. Notable features include: a drag-and-drop application builder, metric and data graphing/charting, alerting capabilities, and more. 
+
+#### Features
+
+I led the design and implementation of the following features:
+
+- Graphical Application Assembly tool (drag-and-drop interface)
+- Customizable visualization dashboards powered by angular and d3
+- WebSocket-powered real-time visualization and monitoring of Big Data apps
+- Full User Management: authentication, authorization, roles, privileges
+- RBAC-Controlled Interface
+- An "Installation Wizard" component
+- Log-viewer for gigabyte-sized files
 
 #### Responsibilities
 
