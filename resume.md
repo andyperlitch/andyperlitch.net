@@ -4,9 +4,11 @@ Andy Perlitch
 Summary
 -------
 - 8+ years experience as a lead web application architect and expert UI designer/developer
+- Angular.js and Backbone.js Expert
 - Full-Stack development experience with LAMP and MEAN architectures
 - Strong ability to lead and manage UI teams
-- Very experienced in setting up e-commerce solutions; integrating with payment gateways, ensuring PCI Compliance, implementing shopping carts, etc.
+- Very experienced in architecting highly-interactive web applications using the latest front-end technologies
+- Adept at setting up e-commerce solutions; integrating with payment gateways, ensuring PCI Compliance, implementing shopping carts, etc.
 
 Toolkit
 -------
