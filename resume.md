@@ -1,6 +1,20 @@
 Andy Perlitch
 =============
 
+**phone:** 408-829-9319
+
+<script>
+  (function(){
+      var user = "andyperlitch"
+      var domain = "gmai" + "l.com"
+      var address = user + "@" + domain
+      var linkStart = "<a href=" + "mail" + "to:" + address + ">"
+      var linkEnd = "</a>"
+      var linkAddress = linkStart + address + linkEnd
+      document.write('<strong>email:</strong> ' + linkAddress)
+  }());
+</script>
+
 Summary
 -------
 - 8+ years experience as a lead web application architect and expert UI designer/developer
