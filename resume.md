@@ -4,17 +4,16 @@ Andy Perlitch
 Summary
 -------
 - 8+ years experience as a lead web application architect and expert UI designer/developer
-- Angular.js and Backbone.js Expert
+- JavaScript/NodeJS/Angular.js and Backbone.js Expert
 - Full-Stack development experience with LAMP and MEAN architectures
 - Strong ability to lead and manage UI teams
 - Very experienced in architecting highly-interactive web applications using the latest front-end technologies
-- Adept at setting up e-commerce solutions; integrating with payment gateways, ensuring PCI Compliance, implementing shopping carts, etc.
 
 Toolkit
 -------
-- **Front-End:** HTML5, JavaScript, CSS/LESS, *angular.js*, backbone.js, *Twitter Bootstrap*, jQuery, jQuery UI, *d3.js*, requireJS, browserify, 
+- **Front-End:** HTML5, JavaScript, *d3.js*, CSS/LESS, *angular.js*, backbone.js, *Twitter Bootstrap*, jQuery, jQuery UI, browserify, 
 - **Graphics:** Photoshop, Illustrator, FormZ
-- **Back-End:** PHP, nodejs, expressjs
+- **Back-End:** nodeJS, PHP
 - **Version Control:** Git
 - **Databases:** MySQL, mongoDB
 - **Operating Systems:** Mac OS, Unix/Linux
@@ -22,11 +21,31 @@ Toolkit
 Experience
 ----------
 
+### Candid Systems
+
+#### Front-End/NodeJS Engineer
+
+##### November 2015 - Present
+
+* Lead the design and development of UI dashboard for the Candid Systems network verification appliance
+  * mock-ups/wireframe creation
+  * single-page web application using angular.js
+  * highly interactive, d3.js-based visualizations
+  * Unit test suite written with karma and jasmine; generated code coverage reports
+  * automated build process, run with Jenkins CI
+* Substantial work on node-based API server
+  * helped ramp up colleague on NodeJS/JavaScript
+  * worked on API endpoints for use by the front-end
+
+##### Technologies
+
+HTML5, CSS/LESS, JavaScript, d3.js, angular.js, node.js, npm, bower, karma, bash, Git, Bitbucket, JIRA, Jenkins
+
 ### DataTorrent Inc
 
-#### Software Engineer
+#### Front-End Software Engineer
 
-##### January 2013 - Current
+##### January 2013 - October 2015 (2 years, 10 months)
 
 * Lead the design and development of UI dashboard for the DataTorrent platform:
   * mock-ups/wireframe creation
